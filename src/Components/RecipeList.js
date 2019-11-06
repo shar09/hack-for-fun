@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import RecipeCard from './RecipeCard';
 
-const RecipeList = recipes => (
+const RecipeList = ({ recipes }) => (
     <div>
         {recipes.map((recipe, index) => (
             <RecipeCard key={index} imageSrc={recipe.imageSrc} title={recipe.title} content={recipe.content} link={recipe.link} />
