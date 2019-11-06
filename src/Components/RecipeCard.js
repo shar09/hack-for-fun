@@ -13,3 +13,5 @@ const RecipeCard = ({imageSrc, title, content, link }) => (
   </Card.Body>
 </Card>
 )
+
+export default RecipeCard;
