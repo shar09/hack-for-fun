@@ -14,7 +14,13 @@ const RecipeContainer = styled.div`
 const RecipeList = ({ recipes }) => (
     <RecipeContainer>
         {recipes.map((recipe, index) => (
-            <RecipeCard key={index} imageSrc={recipe.imageSrc} title={recipe.title} content={recipe.content} link={recipe.link} />
+            <RecipeCard
+                key={index}
+                image={recipe.image}
+                title={recipe.title}
+                sourceUrl={recipe.sourceUrl}
+                missedIngredients={recipe.missedIngredients}
+            />
         ))}
     </RecipeContainer>
 );
