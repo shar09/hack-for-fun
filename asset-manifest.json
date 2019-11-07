@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/shar09/hack-for-fun.git/static/css/main.57bad80e.chunk.css",
+    "main.js": "/shar09/hack-for-fun.git/static/js/main.646e2460.chunk.js",
+    "main.js.map": "/shar09/hack-for-fun.git/static/js/main.646e2460.chunk.js.map",
+    "runtime-main.js": "/shar09/hack-for-fun.git/static/js/runtime-main.36c67895.js",
+    "runtime-main.js.map": "/shar09/hack-for-fun.git/static/js/runtime-main.36c67895.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/shar09/hack-for-fun.git/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.8d8ba528.chunk.js": "/shar09/hack-for-fun.git/static/js/2.8d8ba528.chunk.js",
+    "static/js/2.8d8ba528.chunk.js.map": "/shar09/hack-for-fun.git/static/js/2.8d8ba528.chunk.js.map",
+    "index.html": "/shar09/hack-for-fun.git/index.html",
+    "precache-manifest.92fdf833b210cfe22bdfdd7456d5fea5.js": "/shar09/hack-for-fun.git/precache-manifest.92fdf833b210cfe22bdfdd7456d5fea5.js",
+    "service-worker.js": "/shar09/hack-for-fun.git/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/shar09/hack-for-fun.git/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.57bad80e.chunk.css.map": "/shar09/hack-for-fun.git/static/css/main.57bad80e.chunk.css.map",
+    "static/media/App.css": "/shar09/hack-for-fun.git/static/media/background.0a4609b6.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36c67895.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.8d8ba528.chunk.js",
+    "static/css/main.57bad80e.chunk.css",
+    "static/js/main.646e2460.chunk.js"
+  ]
+}
