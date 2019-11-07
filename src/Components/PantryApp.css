@@ -24,7 +24,7 @@ html, body {
     min-height: 100%;
   
     /* Positioning */
-    margin: 0 auto -60px;
+    margin: 0 auto -30px;
 }
 
 .header {
@@ -36,12 +36,12 @@ html, body {
 
 footer,
 .push {
-  height: 60px;
+  height: 30px;
 }
 
 footer {
   /* Box-model */
-  padding: 30px 0;
+  padding: 22px 0;
 
   /* Positioning */
   font-size: 12px;

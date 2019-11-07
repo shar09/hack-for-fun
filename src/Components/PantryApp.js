@@ -72,7 +72,7 @@ const PantryApp = props => {
         </div>
         
         <footer>
-            Footer 2019. 
+            The Pantry 2019 ©. 
         </footer> 
         </div>     
     );
