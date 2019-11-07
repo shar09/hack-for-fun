@@ -6,7 +6,7 @@ export default class RecipeForm extends React.Component {
   super();
   this.state = {
      word: '',
-     items: []
+     items: [],
    };
  };
  addToList = (e) => {
@@ -17,10 +17,10 @@ export default class RecipeForm extends React.Component {
  }
 
  removeFromList = (word) => {
-   // const i = this.state.items.indexOf(word);
-   // const newList = [...this.state.items];
-   // newList.splice(i,1);
-   // this.setState({items: newList});
+   const i = this.state.items.indexOf(word);
+   const newList = [...this.state.items];
+   newList.splice(i,1);
+   this.setState({items: newList})
  }
 
  onChange = (e) => {
@@ -32,7 +32,7 @@ export default class RecipeForm extends React.Component {
      <ul>
 
        {this.state.items.map((word, index) =>
-         <li key={index}>{word} - <button onClick= {this.removeFromList(word)} > X </button></li> ) }
+         <li key={index}>{word} - <Button onClick= {() => {     this.removeFromList(word) }} > X </Button></li> ) }
      </ul>
    )
  }
