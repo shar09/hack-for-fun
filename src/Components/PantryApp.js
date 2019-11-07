@@ -28,7 +28,7 @@ const PantryApp = props => {
             });
 
     const getAndSetRecipeData = (ids, recipesData) => {
-        const recipeTargetURL = `https://xgsd7neuahgcwodbo7pxbttar5p5fhm6.apitracker.net/recipes/informationBulk?ids=${ids}&apiKey=443f34e2a79a4b029105534d36eaae12`;
+        const recipeTargetURL = `https://api.spoonacular.com/recipes/informationBulk?ids=${ids}&apiKey=443f34e2a79a4b029105534d36eaae12`;
 
         fetch(recipeTargetURL)
             .then(response => {
