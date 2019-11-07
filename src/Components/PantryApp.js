@@ -9,7 +9,7 @@ const PantryApp = props => {
     return (
         <div className="root">
         <div className="wrappper">
-            <h1 className="header">Welcome to the pantry!</h1>
+            <h1 className="header">Welcome to the Pantry!</h1>
             {recipes && <RecipeList recipes={recipes} />}
             {/* IngredientsForm */}
 
