@@ -2,16 +2,21 @@
   "name": "dw2019",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://hack-for-fun.github.io/hack-for-fun",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
+    "react-sticky-footer": "0.1.0-rc3",
     "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

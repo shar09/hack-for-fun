@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const RecipeContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: space-around;
     max-width: ${props => props.theme.maxWidth};
-    margin: 0 auto;
+    margin: 40px;
 `;
 
 
