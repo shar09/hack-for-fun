@@ -8,7 +8,7 @@ const PantryApp = props => {
 
     const getIngredientData = () =>
         fetch(
-            `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&number=2&ignorePantry=true&apiKey=e7e8a1d91f9b4f46bbb75f039569e610`
+            `https://xgsd7neuahgcwodbo7pxbttar5p5fhm6.apitracker.net/recipes/findByIngredients?ingredients=${ingredients}&number=2&ignorePantry=true&apiKey=e7e8a1d91f9b4f46bbb75f039569e610`
         )
             .then(response => {
                 if (response.status !== 200) {
@@ -70,11 +70,11 @@ const PantryApp = props => {
 
             <div className="push"></div>
         </div>
-        
+
         <footer>
-            The Pantry 2019 ©. 
-        </footer> 
-        </div>     
+            The Pantry 2019 ©.
+        </footer>
+        </div>
     );
 };
 
