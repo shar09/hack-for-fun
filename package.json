@@ -2,7 +2,7 @@
   "name": "dw2019",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/hack-for-fun/hack-for-fun.git
+  "homepage": "http://hack-for-fun.github.io/hack-for-fun",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
