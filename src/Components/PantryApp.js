@@ -10,7 +10,7 @@ const PantryApp = props => {
 
     const getIngredientData = () =>
         fetch(
-            `https://xgsd7neuahgcwodbo7pxbttar5p5fhm6.apitracker.net/recipes/findByIngredients?ingredients=${ingredients}&number=2&ignorePantry=true&apiKey=e7e8a1d91f9b4f46bbb75f039569e610`
+            `https://xgsd7neuahgcwodbo7pxbttar5p5fhm6.apitracker.net/recipes/findByIngredients?ingredients=${ingredients}&number=2&ignorePantry=true&apiKey=443f34e2a79a4b029105534d36eaae12`
         )
             .then(response => {
                 if (response.status !== 200) {
@@ -28,7 +28,7 @@ const PantryApp = props => {
             });
 
     const getAndSetRecipeData = (ids, recipesData) => {
-        const recipeTargetURL = `https://xgsd7neuahgcwodbo7pxbttar5p5fhm6.apitracker.net/recipes/informationBulk?ids=${ids}&apiKey=e7e8a1d91f9b4f46bbb75f039569e610`;
+        const recipeTargetURL = `https://xgsd7neuahgcwodbo7pxbttar5p5fhm6.apitracker.net/recipes/informationBulk?ids=${ids}&apiKey=443f34e2a79a4b029105534d36eaae12`;
 
         fetch(recipeTargetURL)
             .then(response => {
