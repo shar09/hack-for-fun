@@ -1,5 +1,6 @@
 import React from 'react';
 import RecipeList from './RecipeList';
+import './PantryApp.css';
 
 const PantryApp = props => {
     const [recipes, setRecipes] = React.useState([]);
@@ -58,14 +59,22 @@ const PantryApp = props => {
     };
 
     return (
-        <div>
-            <h1>Welcome to the pantry!</h1>
+        <div className="root">
+        <div className="wrappper">
+            <h1 className="header">Welcome to the Pantry!</h1>
             {recipes && <RecipeList recipes={recipes} />}
             <button type="button" onClick={getRecords}>
                 Get recipes
             </button>
             {/* IngredientsForm */}
+
+            <div className="push"></div>
         </div>
+        
+        <footer>
+            The Pantry 2019 ©. 
+        </footer> 
+        </div>     
     );
 };
 

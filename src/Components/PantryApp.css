@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:600,700|Teko&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.root {
+    position: relative;
+    min-height: 100vh;
+}
+
+.wrapper {
+    height: auto !important;
+    height: 100%;
+  
+    /* Box-model */
+    min-height: 100%;
+  
+    /* Positioning */
+    margin: 0 auto -30px;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+footer,
+.push {
+  height: 30px;
+}
+
+footer {
+  /* Box-model */
+  padding: 22px 0;
+
+  /* Positioning */
+  font-size: 12px;
+
+  /* Typography */
+  color: #ccc;
+  text-align: center;
+
+  /* Visual */
+  background: #666;
+  border-top: 6px solid red;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
