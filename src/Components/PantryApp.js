@@ -1,14 +1,16 @@
 import React from 'react';
 import RecipeList from './RecipeList';
+import RecipeForm from './RecipeForm';
 import './PantryApp.css';
 
 const PantryApp = props => {
     const [recipes, setRecipes] = React.useState([]);
-    const ingredients = ['apples', 'flour', 'sugar'];
+    // const ingredients = ['apples', 'flour', 'sugar'];
+    const [ingredients, setIngredients] = React.useState([]);
 
     const getIngredientData = () =>
         fetch(
-            `https://xgsd7neuahgcwodbo7pxbttar5p5fhm6.apitracker.net/recipes/findByIngredients?ingredients=${ingredients}&number=2&ignorePantry=true&apiKey=e7e8a1d91f9b4f46bbb75f039569e610`
+            `https://xgsd7neuahgcwodbo7pxbttar5p5fhm6.apitracker.net/recipes/findByIngredients?ingredients=${ingredients}&number=2&ignorePantry=true&apiKey=443f34e2a79a4b029105534d36eaae12`
         )
             .then(response => {
                 if (response.status !== 200) {
@@ -26,7 +28,7 @@ const PantryApp = props => {
             });
 
     const getAndSetRecipeData = (ids, recipesData) => {
-        const recipeTargetURL = `https://api.spoonacular.com/recipes/informationBulk?ids=${ids}&apiKey=e7e8a1d91f9b4f46bbb75f039569e610`;
+        const recipeTargetURL = `https://api.spoonacular.com/recipes/informationBulk?ids=${ids}&apiKey=443f34e2a79a4b029105534d36eaae12`;
 
         fetch(recipeTargetURL)
             .then(response => {
@@ -63,8 +65,9 @@ const PantryApp = props => {
         <div className="wrappper">
             <h1 className="header">Welcome to the Pantry!</h1>
             {recipes && <RecipeList recipes={recipes} />}
-            <button className="button" type="button" onClick={getRecords}>
-                Get Recipes
+            <RecipeForm setIngredients={setIngredients}/>
+            <button type="button" onClick={getRecords}>
+                Get recipes
             </button>
             {/* IngredientsForm */}
 

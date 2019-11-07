@@ -10,6 +10,7 @@ const RecipeContainer = styled.div`
     margin: 40px;
 `;
 
+
 const RecipeList = ({ recipes }) => (
     <RecipeContainer>
         {recipes.map((recipe, index) => (
