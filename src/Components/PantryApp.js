@@ -9,7 +9,7 @@ const PantryApp = props => {
 
     const getIngredientData = () =>
         fetch(
-            `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&number=2&ignorePantry=true&apiKey=e7e8a1d91f9b4f46bbb75f039569e610`
+            `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&number=5&ignorePantry=true&apiKey=e7e8a1d91f9b4f46bbb75f039569e610`
         )
             .then(response => {
                 if (response.status !== 200) {
