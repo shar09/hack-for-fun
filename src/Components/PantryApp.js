@@ -1,9 +1,11 @@
 import React from 'react';
 import RecipeList from './RecipeList';
+import RecipeForm from './RecipeForm';
 
 const PantryApp = props => {
     const [recipes, setRecipes] = React.useState([]);
-    const ingredients = ['apples', 'flour', 'sugar'];
+    // const ingredients = ['apples', 'flour', 'sugar'];
+    const [ingredients, setIngredients] = React.useState([]);
 
     const getIngredientData = () =>
         fetch(
@@ -61,6 +63,7 @@ const PantryApp = props => {
         <div>
             <h1>Welcome to the pantry!</h1>
             {recipes && <RecipeList recipes={recipes} />}
+            <RecipeForm setIngredients={setIngredients}/>
             <button type="button" onClick={getRecords}>
                 Get recipes
             </button>
